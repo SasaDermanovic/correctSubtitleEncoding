@@ -4,8 +4,6 @@
             for line in fr:
                 fw.write(line[:-1]+'\r\n')
 
-filename=input("Unesi naziv prevoda: ")
-filename = filename +".srt"
-newFilename=input("Unesi novi naziv prevoda: ")
-newFilename = newFilename +".srt"
+filename=input("Unesi naziv prevoda bez ekstenzije: ")+".srt"
+newFilename=input("Unesi novi naziv prevoda bez ekstenzije: ")+".srt"
 correctSubtitleEncoding(filename,newFilename,"Windows-1250")
